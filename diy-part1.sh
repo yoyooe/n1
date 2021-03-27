@@ -70,11 +70,7 @@ svn co https://github.com/gd0772/diy/trunk/public/luci-app-netdata ./package/lea
 svn co https://github.com/gd0772/diy/trunk/public/netdata ./feeds/packages/admin/netdata
 # echo '替换USB打印'
 svn co https://github.com/gd0772/diy/trunk/public/luci-app-usb-printer ./package/lean/luci-app-usb-printer
-# echo '添加 KPR去广告'
-git clone https://github.com/project-lede/luci-app-godproxy.git ./package/diy/luci-app-godproxy
-# echo '添加 KPR去广告规则数据'
-#svn co https://github.com/gd0772/diy/trunk/public/rules ./package/diy/luci-app-godproxy/root/usr/share/koolproxy/data/rules
-              
+             
 # echo '修改插件名称'
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i 's/TTYD 终端/命令行/g' package/lean/luci-app-ttyd/po/zh-cn/terminal.po
